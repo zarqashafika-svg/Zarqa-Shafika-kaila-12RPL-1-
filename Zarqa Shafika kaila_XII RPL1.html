@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BIODATA DIRI</title>
+
+  <!-- Google Font Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #e3f2fd, #e1f5fe);
+      color: #1565c0;
+    }
+
+    header {
+      background: linear-gradient(90deg, #90caf9, #b3e5fc);
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 26px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: rgba(255, 255, 255, 0.96);
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #1976d2;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 15px;
+      display: block;
+      color: #0d47a1;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #bbdefb;
+      margin-top: 6px;
+      font-size: 14px;
+      transition: 0.3s;
+      background-color: #e3f2fd;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #64b5f6;
+      outline: none;
+      box-shadow: 0 0 8px rgba(100, 181, 246, 0.3);
+      background-color: #ffffff;
+    }
+
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(to right, #64b5f6, #4fc3f7);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #42a5f5, #29b6f6);
+    }
+    footer{
+      background:#90caf9;
+      color:white;
+      text-align:center;
+      padding:16px;
+      font-size:14px
+      box-shadow:0 -4px 8px rgba(0,0,0,0.05);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      header {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    FORM PEMBUATAN KARTU SANTRI
+  </header>
+
+  <div class="container">
+    <h2></h2> Biodata Diri </h2>
+
+
+    <form action="#" method="POST">
+      <label for="nama">Nama</label>
+      <input type="text" name="nama" id="nama" placeholder=>
+
+
+      <label for="Angkatan">Angkatan</label/>
+      <input type="text" name='nama' id="="Angkatan" placeholder=>
+
+      <label for="tanggal_lahir">Tanggal Lahir</label>
+      <input type="date" name="tanggal_lahir" id="tanggal_lahir" required>
+
+      <label for="gender">Jenis Kelamin</label>
+      <select name="gender" id="gender" required>
+        <option value="" disabled selected>Pilih</option>
+        <option value="Perempuan">Perempuan</option>
+        <option value="Laki-laki">Laki-laki</option>
+      </select>
+
+      <label for="alamat">Alamat</label>
+      <textarea name="alamat" id="alamat" placeholder=></textarea>
+
+      <label for="Hobi">Hobi</label>
+      <input type="text" name="Hobi" id="Hobi" placeholder=>
+
+      <label for="cita_cita">Cita-Cita</label>
+      <input type="text" name="cita_cita" id="cita_cita" placeholder=>
+
+      <button type="submit">Kirim Biodata</button>
+    </form>
+  </div>
+<footer>
+ &copy;2025 Lee Sangwon's
+ </footer>
+</body>
+</html>
